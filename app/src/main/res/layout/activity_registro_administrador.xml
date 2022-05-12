@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".RegistroAdministrador">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Administrar registro"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtEmailRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Correo electrónico"></EditText>
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Contraseña"></EditText>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="294dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="Registrar"
+                    android:text="Registrar"></Button>
+
+                <Button
+                    android:id="@+id/btnConsultar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Buscar"
+                    android:text="Consultar" />
+
+                <Button
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Eliminar"
+                    android:text="Eliminar" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

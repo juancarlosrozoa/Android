@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IniciarSesion">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="367dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:hint="Correo electrónico"></EditText>
+
+
+        <EditText
+            android:id="@+id/txtPasswordIniciarSesion"
+            android:layout_width="367dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="Contraseña"
+            android:inputType="textPassword"></EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Iniciar sesión"></Button>
+
+
+
+
+
+
+</LinearLayout>
